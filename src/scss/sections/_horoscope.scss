@@ -1,0 +1,19 @@
+.horoscope {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__illustration {
+        max-width: 600px;
+    }
+    &__info {
+        max-width: 475px;
+        .btn {
+            margin-top: 35px;
+        }
+        .paragraph {
+            margin-top: 30px;
+        }
+    }
+}

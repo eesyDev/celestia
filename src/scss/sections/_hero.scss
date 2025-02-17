@@ -1,0 +1,21 @@
+.hero {
+    position: relative;
+    margin-top: 36px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__info {
+        max-width: 605px;
+    }
+    &__illustration {
+        max-width: 650px;
+    }
+    .paragraph {
+        margin-top: 24px;
+    }
+    .btn {
+        margin-top: 50px;
+    }
+}

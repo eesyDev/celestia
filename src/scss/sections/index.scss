@@ -1,2 +1,8 @@
-@use 'base';
-@use 'parts/index';
+@use 'header';
+@use 'hero';
+@use 'zodiacs';
+@use 'notice';
+@use 'horoscope';
+@use 'blog';
+@use 'subscribe';
+@use 'footer';

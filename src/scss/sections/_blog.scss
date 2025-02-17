@@ -1,0 +1,25 @@
+.blog {
+    padding-bottom: 200px;
+    .heading {
+        max-width: 475px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    &__wrapper {
+        display: flex;
+        margin-top: 96px;
+    }
+    &__item {
+        background-color: var(--white);
+        width: calc(33.33% - 24px);
+        &-info {
+            padding: 30px;
+        }
+    }
+    .text {
+        margin-top: 24px;
+    }
+    .btn {
+        margin-top: 48px;
+    }
+}

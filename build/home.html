@@ -5,36 +5,367 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/lib/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/lib/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <title>Celestia</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
-                <a href="/" class="header__logo">Celestia</a>
-                <div class="header__nav">
-                    <div class="header__search">
-                        <svg>
-                            <use xlink:href="assets/img/sprite.svg#UI--search"></use>
-                        </svg>
+    <div class="pattern-image">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="/" class="header__logo">Celestia</a>
+                    <div class="header__nav">
+                        <div class="header__search">
+                            <svg>
+                                <use xlink:href="assets/img/sprite.svg#search"></use>
+                            </svg>
+                            <!-- <img src="/assets/img/svg/search.svg" alt=""> -->
+                        </div>
+                        <nav>
+                            <ul>
+                                <li><a href="" class="hovered">Главная</a></li>
+                                <li><a href="" class="hovered">Зодиаки</a></li>
+                                <li><a href="" class="hovered">Нумерология</a></li>
+                                <li><a href="" class="hovered">Мистика</a></li>
+                                <li><a href="" class="hovered">Таро</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <nav>
+                </div>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__info">
+                        <p class="pre-title">Тайны звёзд</p>
+                        <h1 class="h1 title">Астрология сегодня: от древних знаний к современной жизни</h1>
+                        <p class="paragraph">Ваш надёжный проводник в мире астрологии, где каждое знание имеет практическое применение</p>
+                        <a href="" class="btn btn--primary">К статьям</a>
+                    </div>
+                    <div class="hero__illustration">
+                        <img 
+                            src="/assets/img/1px.png" 
+                            data-src="/assets/img/hero.png"
+                            data-srcset="/assets/img/hero_2x.png 2x" 
+                            alt="Знаки зодиака в круге на сыетлом звездном фоне">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="spacer spacer--150"></div>
+        <section class="zodiac">
+            <div class="container">
+                <div class="heading">
+                    <p class="pre-title">Твой знак зодиака</p>
+                    <h2 class="h1">Узнай всё о своей судьбе в звёздах</h2>
+                </div>
+                <div class="zodiac__wrapper">
+                    <a href="" class="zodiac__item">
+                        <img 
+                            src="/assets/img/1px.png" 
+                            data-src="/assets/img/aries.png"
+                            data-srcset="/assets/img/aries_2x.png 2x"
+                            alt="Овен" class="icon">
+                        <h5 class="title">Овен</h5>
+                    </a>
+                    <a href="" class="zodiac__item">
+                        <img 
+                            src="/assets/img/1px.png" 
+                            data-src="/assets/img/taurus.png"
+                            data-srcset="/assets/img/taurus_2x.png 2x"
+                            alt="Телец" class="icon">
+                        <h5 class="title">Телец</h5>
+                    </a>
+                    <a href="" class="zodiac__item">
+                        <img 
+                            src="/assets/img/1px.png" 
+                            data-src="/assets/img/gemini.png"
+                            data-srcset="/assets/img/gemini_2x.png 2x"
+                            alt="Близнецы" class="icon">
+                        <h5 class="title">Близнецы</h5>
+                    </a>
+                    <a href="" class="zodiac__item">
+                        <img 
+                            src="/assets/img/1px.png" 
+                            data-src="/assets/img/cancer.png"
+                            data-srcset="/assets/img/cancer_2x.png 2x"
+                            alt="Рак" class="icon">
+                        <h5 class="title">Рак</h5>
+                    </a>
+                    <a href="" class="zodiac__item">
+                        <img 
+                            src="/assets/img/1px.png" 
+                            data-src="/assets/img/leo.png"
+                            data-srcset="/assets/img/leo_2x.png 2x"
+                            alt="Лев" class="icon">
+                        <h5 class="title">Лев</h5>
+                    </a>
+                    <a href="" class="zodiac__item">
+                        <img 
+                            src="/assets/img/1px.png" 
+                            data-src="/assets/img/virgin.png"
+                            data-srcset="/assets/img/virgin_2x.png 2x"
+                            alt="Дева" class="icon">
+                        <h5 class="title">Дева</h5>
+                    </a>
+                    <a href="" class="zodiac__item">
+                        <img 
+                            src="/assets/img/1px.png" 
+                            data-src="/assets/img/libra.png"
+                            data-srcset="/assets/img/libra_2x.png 2x"
+                            alt="Весы" class="icon">
+                        <h5 class="title">Весы</h5>
+                    </a>
+                    <a href="" class="zodiac__item">
+                        <img 
+                            src="/assets/img/1px.png" 
+                            data-src="/assets/img/scorpio.png"
+                            data-srcset="/assets/img/scorpio_2x.png 2x"
+                            alt="Скорпион" class="icon">
+                        <h5 class="title">Скорпион</h5>
+                    </a>
+                    <a href="" class="zodiac__item">
+                        <img 
+                            src="/assets/img/1px.png" 
+                            data-src="/assets/img/saggitarius.png"
+                            data-srcset="/assets/img/saggitarius_2x.png 2x"
+                            alt="Стрелец" class="icon">
+                        <h5 class="title">Стрелец</h5>
+                    </a>
+                    <a href="" class="zodiac__item">
+                        <img 
+                            src="/assets/img/1px.png" 
+                            data-src="/assets/img/capricorn.png"
+                            data-srcset="/assets/img/capricorn_2x.png 2x"
+                            alt="Козерог" class="icon">
+                        <h5 class="title">Козерог</h5>
+                    </a>
+                    <a href="" class="zodiac__item">
+                        <img 
+                            src="/assets/img/1px.png" 
+                            data-src="/assets/img/aquarius.png"
+                            data-srcset="/assets/img/aquarius_2x.png 2x"
+                            alt="Водолей" class="icon">
+                        <h5 class="title">Водолей</h5>
+                    </a>
+                    <a href="" class="zodiac__item">
+                        <img 
+                            src="/assets/img/1px.png" 
+                            data-src="/assets/img/pieces.png"
+                            data-srcset="/assets/img/pieces_2x.png 2x"
+                            alt="Рыбы" class="icon">
+                        <h5 class="title">Рыбы</h5>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="spacer spacer--150"></div>
+    </div>
+    <section class="notice">
+        <div class="container">
+            <div class="heading">
+                <p class="pre-title">Астрология и нумерология</p>
+                <h2 class="h1">Ответы на главные вопросы жизни</h2>
+            </div>
+            <div class="notice__wrapper">
+                <div class="notice__item">
+                    <img 
+                        src="/assets/img/1px.png" 
+                        data-src="/assets/img/notice_1.png"
+                        data-srcset="/assets/img/notice_1_2x.png 2x" 
+                        alt="Персональный гороскоп">
+                    <h6 class="title">Персональный гороскоп</h6>
+                    <p class="tiny text">Откройте для себя уникальный путь, предначертанный звездами. Подробный анализ вашей натальной карты и текущих транзитов планет поможет увидеть благоприятные возможности и подготовиться к возможным трудностям. Персональный гороскоп станет вашим надежным компасом в принятии важных решений.</p>
+                </div>
+                <div class="notice__item">
+                    <img 
+                        src="/assets/img/1px.png" 
+                        data-src="/assets/img/notice_2.png"
+                        data-srcset="/assets/img/notice_2_2x.png 2x" 
+                        alt="Совместимость знаков">
+                    <h6 class="title">Совместимость знаков</h6>
+                    <p class="tiny text">Астрология способна раскрыть глубинные аспекты любых отношений – романтических, деловых или дружеских. Детальный анализ взаимодействия планет двух натальных карт покажет сильные стороны союза и потенциальные сложности. Это поможет лучше понимать друг друга и развивать гармоничные отношения.</p>
+                </div>
+                <div class="notice__item">
+                    <img 
+                        src="/assets/img/1px.png" 
+                        data-src="/assets/img/notice_3.png"
+                        data-srcset="/assets/img/notice_3_2x.png 2x" 
+                        alt="Нумерологический код">
+                    <h6 class="title">Нумерологический код</h6>
+                    <p class="tiny text">Каждое число в дате вашего рождения несет особый смысл и энергетику. Нумерологический анализ раскроет ваши скрытые таланты, жизненные задачи и наиболее благоприятные периоды для важных начинаний. Узнайте свои счастливые числа и даты, чтобы использовать энергию чисел себе во благо.</p>
+                </div>
+                <div class="notice__item">
+                    <img 
+                        src="/assets/img/1px.png" 
+                        data-src="/assets/img/notice_4.png"
+                        data-srcset="/assets/img/notice_4_2x.png 2x" 
+                        alt="Натальная карта">
+                    <h6 class="title">Натальная карта</h6>
+                    <p class="tiny text">Момент вашего рождения уникален – это точка отсчета вашего жизненного пути. Расположение планет в этот момент создало неповторимый узор судьбы, записанный в вашей натальной карте. Профессиональный анализ этой карты раскроет ваши природные дарования, покажет лучшие пути их реализации и подскажет направления личностного роста.</p>
+                </div>
+                <div class="notice__item">
+                    <img 
+                        src="/assets/img/1px.png" 
+                        data-src="/assets/img/notice_5.png"
+                        data-srcset="/assets/img/notice_5_2x.png 2x" 
+                        alt="Лунные циклы">
+                    <h6 class="title">Лунные циклы</h6>
+                    <p class="tiny text">Луна – ближайшее к нам небесное тело, чье влияние мы ощущаем каждый день. Понимание лунных ритмов поможет вам грамотно планировать дела, выбирать лучшие дни для важных начинаний и решений. Каждая фаза Луны имеет свою особую энергетику, научившись взаимодействовать с которой, вы сможете достигать своих целей легче и быстрее.</p>
+                </div>
+                <div class="notice__item">
+                    <img 
+                        src="/assets/img/1px.png" 
+                        data-src="/assets/img/notice_6.png"
+                        data-srcset="/assets/img/notice_6_2x.png 2x" 
+                        alt="Кармические задачи">
+                    <h6 class="title">Кармические задачи</h6>
+                    <p class="tiny text">
+                        У каждой души есть своя миссия и уроки, которые предстоит пройти в этой жизни. Через анализ положения кармических узлов в вашей натальной карте вы сможете понять свое истинное предназначение, увидеть кармические долги прошлого и задачи на будущее. Это знание поможет вам двигаться по пути духовного развития более осознанно и целенаправленно.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="pattern-image">
+        <div class="spacer spacer--150"></div>
+        <section class="horoscope">
+            <div class="container">
+                <div class="horoscope__wrapper">
+                    <div class="horoscope__illustration">
+                        <img 
+                            src="/assets/img/1px.png" 
+                            data-src="/assets/img/horoscope.png"
+                            data-srcset="/assets/img/horoscope_2x.png 2x" 
+                            alt="Гороскоп на 2025 год">
+                    </div>
+                    <div class="horoscope__info">
+                        <p class="pre-title">загляни в будущее</p>
+                        <h2 class="h1">Гороскоп на 2025 год</h2>
+                        <p class="paragraph">
+                            Узнайте, какие возможности и препятствия готовят для вас звезды. Точный прогноз поможет принимать верные решения и использовать благоприятные периоды.
+                        </p>
+                        <a href="" class="btn btn--primary">Прочитать гороскоп</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="spacer spacer--200"></div>
+        <section class="blog">
+            <div class="container">
+                <div class="heading">
+                    <p class="pre-title">Вам понравится</p>
+                    <h2 class="h1">Интересные статьи</h2>
+                </div>
+                <div class="swiper-container blog-slider">
+                    <div class="blog__wrapper swiper-wrapper">
+                        
+                        <div class="blog__item swiper-slide">
+                            <a href="" class="blog__item-img">
+                                <img src="/assets/img/blog_1.png" alt="">
+                            </a>
+                            <div class="blog__item-info">
+                                <h6 class="title">Камни и талисманы для каждого знака</h6>
+                                <p class="text">Таким образом, курс на социально-ориентированный национальный проект напрямую зависит от существующих финансовых и административных условий. Сложно сказать, почему многие известные  объявлены нарушающими общечеловеческие нормы этики и морали</p>
+                                <a href="" class="btn btn--outlined">Читать дальше</a>
+                            </div>
+                            
+                        </div>
+                        <div class="blog__item swiper-slide">
+                            <a href="" class="blog__item-img">
+                                <img src="/assets/img/blog_1.png" alt="">
+                            </a>
+                            <div class="blog__item-info">
+                                <h6 class="title">Камни и талисманы для каждого знака</h6>
+                                <p class="text">Таким образом, курс на социально-ориентированный национальный проект напрямую зависит от существующих финансовых и административных условий. Сложно сказать, почему многие известные  объявлены нарушающими общечеловеческие нормы этики и морали</p>
+                                <a href="" class="btn btn--outlined">Читать дальше</a>
+                            </div>
+                            
+                        </div>
+                        <div class="blog__item swiper-slide">
+                            <a href="" class="blog__item-img">
+                                <img src="/assets/img/blog_1.png" alt="">
+                            </a>
+                            <div class="blog__item-info">
+                                <h6 class="title">Камни и талисманы для каждого знака</h6>
+                                <p class="text">Таким образом, курс на социально-ориентированный национальный проект напрямую зависит от существующих финансовых и административных условий. Сложно сказать, почему многие известные  объявлены нарушающими общечеловеческие нормы этики и морали</p>
+                                <a href="" class="btn btn--outlined">Читать дальше</a>
+                            </div>
+                            
+                        </div>
+                        <div class="blog__item swiper-slide">
+                            <a href="" class="blog__item-img">
+                                <img src="/assets/img/blog_1.png" alt="">
+                            </a>
+                            <div class="blog__item-info">
+                                <h6 class="title">Камни и талисманы для каждого знака</h6>
+                                <p class="text">Таким образом, курс на социально-ориентированный национальный проект напрямую зависит от существующих финансовых и административных условий. Сложно сказать, почему многие известные  объявлены нарушающими общечеловеческие нормы этики и морали</p>
+                                <a href="" class="btn btn--outlined">Читать дальше</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination blog-pagination"></div>
+            </div>
+        </section>
+    </div>
+    <section class="subscribe">
+        <div class="container">
+            <div class="heading">
+                <p class="pre-title">загляни в будущее</p>
+                <h2 class="h1">Подпишись на рассылку</h2>
+            </div>
+            <div class="subscribe__wrapper">
+                <form action="">
+                    <input type="text" class="input" placeholder="E-mail">
+                    <button class="btn btn--primary">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__left">
+                    <a href="" class="logo">Celestia</a>
+                    <p class="motto">
+                        Персональный гороскоп станет вашим надежным компасом в принятии важных решений.
+                    </p>
+                </div>
+                <div class="footer__menus">
+                    <div class="footer__col">
+                        <h6 class="tiny">Страницы</h6>
                         <ul>
                             <li><a href="">Главная</a></li>
                             <li><a href="">Зодиаки</a></li>
                             <li><a href="">Нумерология</a></li>
                             <li><a href="">Мистика</a></li>
-                            <li><a href="">Таро</a></li>
                         </ul>
-                    </nav>
+                    </div>
+                    <div class="footer__col">
+                        <h6 class="tiny">Страницы</h6>
+                        <ul>
+                            <li><a href="">Главная</a></li>
+                            <li><a href="">Зодиаки</a></li>
+                            <li><a href="">Нумерология</a></li>
+                            <li><a href="">Мистика</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <div class="footer__bottom">
+                2025 All rights reserved
+            </div>
         </div>
-    </header>
+    </footer>
     <!-- libs -->
-    <script defer src="assets/lib/svgxuse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <script src="/assets/lib/swiper/swiper-bundle.min.js"></script>
+    <!-- project's -->
+    <script src="/assets/js/main.js"></script>
 </body>
 </html>

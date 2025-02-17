@@ -1,0 +1,29 @@
+.notice {
+    background-color: var(--dark-blue);
+    padding: 89px 0;
+    color: var(--white);
+    background-image: url('/assets/img/bg-dark.png');
+    .heading {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 570px;
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        gap: 103px;
+    }
+    &__item {
+        padding: 30px;
+        border: 1px solid var(--blue);
+        width: calc(33.33% - 70px);
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .icon, img {
+            width: 66px;
+            height: 66px;
+        }
+    }
+}

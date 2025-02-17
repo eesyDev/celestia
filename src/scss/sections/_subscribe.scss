@@ -1,0 +1,36 @@
+.subscribe {
+    background-color: var(--dark-blue);
+    background-image: url('/assets/img/bg-dark-1.png');
+    height: 600px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    .heading {
+        max-width: 832px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__wrapper {
+        max-width: 832px;
+        margin: 0 auto;
+    }
+    form {
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    .input {
+        height: 100px;
+        border: 0;
+        background-color: var(--white);
+        width: 600px;
+        padding-left: 30px;
+    }
+    .btn--primary {
+        height: 100px;
+        font-size: 22px;
+        &:hover {
+            background-color: var(--gold);
+        }
+    }
+}

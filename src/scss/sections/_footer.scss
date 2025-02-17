@@ -1,0 +1,38 @@
+.footer {
+    background-image: url('/assets/img/bg.png');
+    padding: 100px 0 50px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 200px;
+        padding-right: 200px;
+    }
+    &__left {
+        max-width: 380px;
+    }
+    .logo {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .motto {
+        margin-top: 24px;
+    }
+    &__menus {
+        display: flex;
+        justify-content: space-between;
+        width: calc(100% - 580px);
+    }
+    &__col {
+        ul {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+    &__bottom {
+        border-top: 1px solid var(--gold);
+        padding: 12px 0;
+        margin-top: 48px;
+    }
+}
