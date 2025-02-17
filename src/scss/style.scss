@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'DM Display';
+}
+.container {
+    width: 100%;
+    max-width: 1560px;
+    padding-left: 72px;
+    padding-right: 72px;
+    margin: 0 auto;
+    &.container-sm {
+        max-width: 1200px;
+    }
+}
