@@ -5,6 +5,7 @@
     color: var(--white);
     display: flex;
     align-items: center;
+    background-size: cover;
     .heading {
         max-width: 832px;
         margin: 0 auto;
@@ -17,20 +18,66 @@
     form {
         display: flex;
         gap: 30px;
-        margin-top: 30px;
+        margin-top: 60px;
     }
     .input {
-        height: 100px;
+        height: 80px;
         border: 0;
         background-color: var(--white);
         width: 600px;
         padding-left: 30px;
     }
     .btn--primary {
-        height: 100px;
+        height: 80px;
         font-size: 22px;
-        &:hover {
-            background-color: var(--gold);
+        @media (hover: hover) {
+            &:hover {
+                background-color: var(--gold);
+            }
+        }
+        
+    }
+    @media screen and (max-width: 1400px) {
+        height: 490px;
+        &__wrapper {
+            max-width: 700px;
+        }
+        .input {
+            height: 60px;
+            width: 470px;
+        }
+        .btn--primary {
+            height: 60px;
+            font-size: 20px;
+        }
+    } 
+    @media screen and (max-width: 1024px) {
+        height: 400px;
+    }
+    @media screen and (max-width: 920px) {
+        height: 330px;
+        .input {
+            height: 50px;
+            width: 350px;
+        }
+        .btn--primary {
+            height: 50px;
+            font-size: 18px;
+        }
+        form {
+            gap: 15px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .input {
+            width: 200px;
+        }
+        .btn--primary {
+            font-size: 14px;
+            padding: 0 20px;
+        }
+        form {
+            gap: 10px;
         }
     }
 }

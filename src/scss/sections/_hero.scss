@@ -10,7 +10,7 @@
         max-width: 605px;
     }
     &__illustration {
-        max-width: 650px;
+        max-width: 550px;
     }
     .paragraph {
         margin-top: 24px;
@@ -18,4 +18,46 @@
     .btn {
         margin-top: 50px;
     }
+    @media screen and (max-width: 1400px) {
+        &__info {
+            max-width: 585px;
+        }
+        &__illustration {
+            max-width: 420px;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        &__info {
+            max-width: 500px;
+        }
+        &__illustration {
+            max-width: 370px;
+        }
+    }
+    @media screen and (max-width: 920px) {
+        &__info {
+            max-width: 400px;
+        }
+        &__illustration {
+            max-width: 290px;
+        }
+        .btn {
+            margin-top: 30px;
+        }
+    }
+    @media screen and (max-width: 920px) {
+        &__info {
+            max-width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+        &__illustration {
+            max-width: 45%;
+            position: absolute;
+            z-index: 0;
+            opacity: .5;
+            right: 0;
+        }
+    }
+    
 }
