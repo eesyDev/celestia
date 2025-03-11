@@ -1,5 +1,5 @@
 .footer {
-    background-image: url('/assets/img/bg.png');
+    background-image: url('../img/bg.png');
     padding: 100px 0 50px;
     &__wrapper {
         display: flex;
@@ -61,7 +61,7 @@
             max-width: 220px;
         }
         &__menus {
-            width: calc(100% - 100px);
+            width: calc(100% - 270px);
         }
         &__wrapper {
             padding-right: 0;

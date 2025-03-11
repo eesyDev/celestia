@@ -2,8 +2,8 @@
     background-color: var(--dark-blue);
     padding: 89px 0;
     color: var(--white);
-    background-image: url('/assets/img/bg-dark.png');
-    .heading {
+    background-image: url('../img/bg-dark.png');
+    > .container .heading {
         text-align: center;
         margin: 0 auto;
         max-width: 570px;

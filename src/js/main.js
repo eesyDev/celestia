@@ -33,7 +33,7 @@ window.load_images = () => {
     }, 150);
 };
 
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
     window.load_images();
     $('.header__search').on('click', function() {
         if (!$(this).find('input').length) {

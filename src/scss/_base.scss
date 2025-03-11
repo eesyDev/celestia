@@ -56,7 +56,7 @@ body {
     }
 }
 .pattern-top-image {
-    background-image: url('/assets/img/bg.png');
+    background-image: url('../img/bg.png');
     background-repeat: repeat-y;
     background-size: 110% 50%;
     object-fit: cover;
@@ -64,7 +64,7 @@ body {
   }
 
   .pattern-bottom-image {
-    background-image: url('/assets/img/bg.png');
+    background-image: url('../img/bg.png');
     background-repeat: repeat-y;
     background-size: 140% 50%;
     object-fit: cover;

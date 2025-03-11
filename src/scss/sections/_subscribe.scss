@@ -1,6 +1,6 @@
 .subscribe {
     background-color: var(--dark-blue);
-    background-image: url('/assets/img/bg-dark-1.png');
+    background-image: url('../img/bg-dark-1.png');
     height: 600px;
     color: var(--white);
     display: flex;
@@ -30,6 +30,7 @@
     .btn--primary {
         height: 80px;
         font-size: 22px;
+        margin: 0;
         @media (hover: hover) {
             &:hover {
                 background-color: var(--gold);
